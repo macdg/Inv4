@@ -1,0 +1,20 @@
+Esta versión 3 contiene:
+
+La versión funcional con código optimizado con validaciones y limpieza de código comentado.
+
+La DB se le agrego código para poder realizar relaciones manuales a otras tablas, se dejo comentado el bloque agregado en el controlador y esto se relizo para la tabla productos de la db, y en esta versión tiene datos comentados en el controlador en el controlador ni en el modelo.
+
+En la DB se agrego tabla interno y se apunto a una db renombrada como almacen1, esto también se configuró en el archivo config en database.
+
+Se tienen datos que son basura en la DB almacen1, pero son todos correctos por el momento.
+
+La tabla nueva creada llamada "Interno" tiene datos ficticios, que por el momento son utiles y estos no deben de ser borrados, pues por el momento no hay nada que cargue estos datos de manera automática esta tabla.
+
+
+Falta:
+
+1. Establecer Relaciones Manuales. Relacionar la base de datos de manera manual y establecer consultas esto tomando en cuenta la nueva tabla.
+2. La DB apunta a una copia nueva llamada almacen1, esto también se configuró en el archivo config en database, falta determinar en el campo de "id_productos", con que se va a enlazar ya que este campo se encuentra vacio por el momento y dependera con quién se relacione para realizar el código correspondiente en el controlador y se llenen los datos que corresponden.
+3. (Realizar validación al principio para que el sistema borre los datos almacenados en la db, esto sucede cuando el usuario da click en el botón de regreso) Esto anterior se modifico comentando el botón de regreso en la vista, para no mostrarlo pero se necesita arreglar esto, píenso que tal vez necesite javascript para ello, pero queda por el momento pendiente y por arreglar.
+4. Aumento la tabla nueva "Interno" para considerar en la siguiente etapa del desarrollo aumentarlo en el controlador, pero depende de donde será apuntada esta tabla, además de que falta determinar en la db en el campo llamado "id_productos" si realmente se va a dirigir a la tabla productos y entonces realizar el código ya mencionado. 
+
